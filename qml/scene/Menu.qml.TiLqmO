@@ -1,0 +1,40 @@
+import QtQuick 2.0
+import Felgo 3.0
+import "../base"
+
+
+Scene {
+    id: menuScene
+    signal selectLevelPressed
+    signal creditsPressed
+    Rectangle {
+        anchors.fill: parent.gameWindowAnchorItem
+        Image {
+            anchors.fill: parent
+            source: "../../assets/44604998-cute-children-background.jpg"
+            width:parent.width
+            height:parent.height
+        }
+    }
+
+    // menu
+    Column {
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: 100
+        spacing: 30
+        Button {
+            text: "حروف اللغة العربية"
+            onClicked: selectLevelPressed()
+            color: "#ff9999"
+        }
+       Button{
+            text: "خروج"
+            onClicked: Qt.quit()
+            color: "#ff9999"
+           anchors.horizontalCenter: parent.horizontalCenter
+       }
+    }
+
+
+}

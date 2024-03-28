@@ -1,0 +1,265 @@
+import QtQuick 2.0
+import Felgo 3.0
+import "../base"
+
+SceneBase {
+    id: selectLevelScene
+    signal levelPressed(string selectedLevel)
+    // background
+    Rectangle{
+        anchors.fill: parent.gameWindowAnchorItem
+    Rectangle {
+        anchors.fill: parent
+
+
+        color: "black"
+    }
+    }
+    //back button
+    Button {
+        text: "Back"
+        anchors.right: selectLevelScene.gameWindowAnchorItem.right
+        anchors.rightMargin: 10
+        anchors.bottom: selectLevelScene.gameWindowAnchorItem.bottom
+        anchors.bottomMargin: 10
+        onClicked: backButtonPressed()
+        color: "#ff6666"
+    }
+
+    Grid {
+        anchors.centerIn: parent
+        spacing: 5
+        columns: 7
+        Button {
+            text: "خ"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level7.qml")
+            }
+        }
+        Button {
+            text: "ح"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level6.qml")
+            }
+        }
+        Button {
+            text: "ج"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level5.qml")
+            }
+        }
+        Button {
+            text: "ث"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level4.qml")
+            }
+        }
+        Button {
+            text: "ت"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level3.qml")
+            }
+        }
+        Button {
+            text: "ب"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level2.qml")
+            }
+        }
+        Button {
+            text: "أ"
+            width: 50
+            height: 50
+            onClicked: {
+                levelPressed("Level1.qml")
+            }
+        }
+
+    Button {
+        text: "ص"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level14.qml")
+        }
+    }
+    Button {
+        text: "ش"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level13.qml")
+        }
+    }
+    Button {
+        text: "س"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level12.qml")
+        }
+    }
+    Button {
+        text: "ز"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level11.qml")
+        }
+    }
+    Button {
+        text: "ر"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level10.qml")
+        }
+    }
+
+    Button {
+        text: "ذ"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level9.qml")
+        }
+    }
+    Button {
+        text: "د"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level8.qml")
+        }
+    }
+    Button {
+        text: "ق"
+        width: 50
+        height: 50
+        onClicked: {
+             levelPressed("Level21.qml")
+        }
+    }
+    Button {
+        text: "ف"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level20.qml")
+        }
+    }
+    Button {
+        text: "غ"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level19.qml")
+        }
+    }
+    Button {
+        text: "ع"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level18.qml")
+        }
+    }
+    Button {
+        text: "ظ"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level17.qml")
+        }
+    }
+    Button {
+        text: "ط"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level16.qml")
+        }
+    }
+    Button {
+        text: "ض"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level15.qml")
+        }
+    }
+    Button {
+        text: "ي"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level28.qml")
+        }
+    }
+    Button {
+        text: "و"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level27.qml")
+        }
+    }
+    Button {
+        text: "ه"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level26.qml")
+        }
+    }
+    Button {
+        text: "ن"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level25.qml")
+        }
+    }
+    Button {
+        text: "م"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level24.qml")
+        }
+    }
+
+    Button {
+        text: "ل"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level23.qml")
+        }
+    }
+
+    Button {
+        text: "ك"
+        width: 50
+        height: 50
+        onClicked: {
+            levelPressed("Level22.qml")
+        }
+    }
+
+}
+
+
+}
